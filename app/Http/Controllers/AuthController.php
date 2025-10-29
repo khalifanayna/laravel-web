@@ -30,7 +30,7 @@ class AuthController extends Controller
 
         // jika password salah
         if (!Hash::check($request->password, $user->password)) {
-            return back()->with('error', 'Password salah.');
+            return back()->with('error', 'Password anda salah ');
         }
 
         // jika berhasil login
