@@ -7,13 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 
-class CreatePelangganDummy extends Seeder
-{
-    /**
-     * Run the database seeds.
-     */
-    public function run(): void
-    {
+class CreatePelangganDummy extends Seeder{
         public function run(){
     $faker = \Faker\Factory::create();
 
@@ -29,4 +23,4 @@ class CreatePelangganDummy extends Seeder
     }
 }
     }
-}
+
