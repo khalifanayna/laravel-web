@@ -31,9 +31,12 @@ class PelangganController extends Controller
     {
         //dd($request->all());
 
+<<<<<<< HEAD
         $data['birthday'] = $request->birthday;
 
 
+=======
+>>>>>>> d7d3480f9ae784cc4d04e6381a4f004922396251
 		$data['first_name'] = $request->first_name;
 		$data['last_name'] = $request->last_name;
 		$data['birthday'] = $request->birthday;
@@ -42,7 +45,10 @@ class PelangganController extends Controller
 		$data['phone'] = $request->phone;
 
 		Pelanggan::create($data);
+<<<<<<< HEAD
 
+=======
+>>>>>>> d7d3480f9ae784cc4d04e6381a4f004922396251
 		return redirect()->route('pelanggan.index')->with('success','Penambahan Data Berhasil!');
     }
 

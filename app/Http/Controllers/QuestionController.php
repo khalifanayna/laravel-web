@@ -29,7 +29,11 @@ class QuestionController extends Controller
         $request->validate([
             'nama'       => 'required|min:5|max:50',
             'email'      => 'required|email',
+<<<<<<< HEAD
             'pertanyaan' => 'required|min:10|max:300',
+=======
+            'pertanyaan' => 'required|min:10|max:300'
+>>>>>>> d7d3480f9ae784cc4d04e6381a4f004922396251
         ], [
             'nama.required' => "Nama Tidah boleh kosong",
             'email.required' => "Email Tidak valid"
