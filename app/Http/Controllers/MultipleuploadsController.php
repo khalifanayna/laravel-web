@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Multipleuploads;
 use Illuminate\Http\Request;
 
-class MultipleuploadsController extends Controller
+class MultipleUploadsController extends Controller
 {
     /**
      * Display a listing of the resource.

@@ -66,5 +66,6 @@ Route::get('/auth', function () {
 Route::get('/auth', [AuthController::class, 'index']);
 Route::post('/auth/login', [AuthController::class, 'login']);
 
-Route::get('/multipleuploads', [MultipleuploadsController::class, 'index']);
-
+Route::get('/multipleuploads', [MultipleUploadsController::class, 'index']);
+Route::post('/multipleuploads', [MultipleUploadsController::class, 'store'])
+    ->name('uploads.store');
