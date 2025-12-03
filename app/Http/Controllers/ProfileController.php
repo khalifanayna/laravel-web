@@ -58,6 +58,7 @@ class ProfileController extends Controller
             'profile_picture' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
+        /** @var \App\Models\User $user */
         $user = Auth::user();
 
         // Delete the old profile picture if it exists
@@ -78,6 +79,7 @@ class ProfileController extends Controller
      */
     public function destroy(string $id)
     {
+        /** @var \App\Models\User $user */
         $user = Auth::user();
 
         if ($user->profile_picture) {
